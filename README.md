@@ -13,9 +13,9 @@ There are times where a node process will be preventing the rails s server from 
 `killall -9 node` will kill all node processes that are running and may fix your webpack issue.
 
 Also try
-rails webpacker:clobber or rails webpacker:clean
+rails `webpacker:clobber` or `rails webpacker:clean`
 along with
-rails webpacker:compile
+`rails webpacker:compile`
 
 This will destroy and recompile your webpack assets.
 
