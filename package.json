@@ -2,7 +2,7 @@
   "name": "react_app",
   "private": true,
   "dependencies": {
-    "@babel/preset-react": "^7.9.4",
+    "@babel/preset-react": "^7.10.1",
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
@@ -15,6 +15,7 @@
   },
   "version": "0.1.0",
   "devDependencies": {
+    "prettier": "2.0.5",
     "webpack-dev-server": "^3.11.0"
   }
 }
