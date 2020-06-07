@@ -1,4 +1,4 @@
-#This is a basic template for setting up React with Rails and Webpacker
+# This is a basic template for setting up React with Rails and Webpacker
 
 It utilizes the structure created with `rails new myapp --webpack=react`
 
