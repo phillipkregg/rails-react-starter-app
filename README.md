@@ -1,24 +1,30 @@
-# README
+#This is a basic template for setting up React with Rails and Webpacker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+It utilizes the structure created with `rails new myapp --webpack=react`
 
-Things you may want to cover:
+## When running into problems...
 
-* Ruby version
+Try running the webpack server:
 
-* System dependencies
+    ./bin/webpack-dev-server
 
-* Configuration
+There are times where a node process will be preventing the rails s server from compiling webpack.
 
-* Database creation
+`killall -9 node` will kill all node processes that are running and may fix your webpack issue.
 
-* Database initialization
+Also try
+rails webpacker:clobber or rails webpacker:clean
+along with
+rails webpacker:compile
 
-* How to run the test suite
+This will destroy and recompile your webpack assets.
 
-* Services (job queues, cache servers, search engines, etc.)
+If all else fails
 
-* Deployment instructions
+    rm -rf node_modules
 
-* ...
+To destroy all node modules, then run
+
+    yarn
+
+To recreate your node packages.
